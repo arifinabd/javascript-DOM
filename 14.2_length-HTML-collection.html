@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1>belajar HTML collection length method()</h1>
+
+    <p>paragraf pertama</p>
+    <p>paragraf kedua</p>
+    <p>paragraf ketiga</p>
+
+    <button onclick="item_method()">alert</button>
+
+    <script>
+      function item_method() {
+        var x = document.getElementsByTagName("p");
+        for (var i = 0; i < x.length; i++) {
+          alert(x.item(i).innerHTML);
+        }
+        // alert(x.length)
+      }
+    </script>
+  </body>
+</html>

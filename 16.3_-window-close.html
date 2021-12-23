@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button onclick="winOpen()">open window</button>
+    <button onclick="winClose()">close window</button>
+
+    <script>
+      var win;
+
+      function winOpen() {
+        win = window.open(
+          "https://niomic.com/",
+          "facebook",
+          "width=500,height=400"
+        );
+        win.document.write("<p>anda berhasil membuka window</P>");
+      }
+
+      function winClose() {
+        win.close();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button onclick="confirmm()">klik</button>
+
+    <p id="hasil"></p>
+
+    <script>
+      function confirmm() {
+        var text;
+        var r = confirm("anda yakin ?");
+        if (r === true) {
+          text = "kamu telah yakin";
+        } else {
+          text = "kamu tidak yakin";
+        }
+        document.getElementById("hasil").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

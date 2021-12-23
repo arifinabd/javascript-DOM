@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .warna {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="tombol()">Random</button>
+    <button onclick="tombol2()">putih</button>
+    <button onclick="tombol3()">toggle</button>
+
+    <script>
+      function tombol() {
+        const merah = Math.round(Math.random() * 255 + 1);
+        const hijau = Math.round(Math.random() * 255 + 1);
+        const biru = Math.round(Math.random() * 255 + 1);
+        console.log(merah);
+        console.log(biru);
+        console.log(hijau);
+        var b =
+          (document.body.style.backgroundColor = `rgb(${merah}, ${hijau}, ${biru})`);
+      }
+      function tombol2() {
+        document.body.style.backgroundColor = "white";
+      }
+      function tombol3() {
+        document.body.classList.toggle("warna");
+      }
+    </script>
+  </body>
+</html>
